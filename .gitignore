@@ -1,0 +1,6 @@
+data/
+img/
+tiny-imagenet-200/
+ImageNet_ILSVEC_2010_val/
+ILSVRC2010_images_val.tar
+ILSVRC2010_validation_ground_truth.txt
