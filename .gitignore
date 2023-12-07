@@ -4,3 +4,13 @@ tiny-imagenet-200/
 ImageNet_ILSVEC_2010_val/
 ILSVRC2010_images_val.tar
 ILSVRC2010_validation_ground_truth.txt
+ImageNet
+ImageNet-devkit
+PROTEINS
+converted_25/
+converted_75/
+cora/
+checkpoint/
+data.zip
+filtered/
+sample/

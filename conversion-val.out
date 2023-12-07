@@ -1,0 +1,35 @@
+INFO: Pandarallel will run on 8 workers.
+INFO: Pandarallel will use Memory file system to transfer data between the main process and workers.
+  0%|          | 0/1000 [00:00<?, ?it/s]  2%|▏         | 17/1000 [00:00<00:05, 168.28it/s]  4%|▎         | 37/1000 [00:00<00:05, 184.48it/s]  6%|▌         | 57/1000 [00:00<00:04, 189.67it/s]  8%|▊         | 77/1000 [00:00<00:04, 193.35it/s] 10%|▉         | 97/1000 [00:00<00:05, 175.08it/s] 12%|█▏        | 115/1000 [00:00<00:05, 167.50it/s] 13%|█▎        | 132/1000 [00:00<00:05, 155.52it/s] 15%|█▌        | 152/1000 [00:00<00:05, 165.69it/s] 17%|█▋        | 169/1000 [00:00<00:05, 165.59it/s] 19%|█▉        | 189/1000 [00:01<00:04, 175.32it/s] 21%|██        | 210/1000 [00:01<00:04, 184.30it/s] 23%|██▎       | 233/1000 [00:01<00:03, 195.06it/s] 25%|██▌       | 253/1000 [00:01<00:04, 171.46it/s] 27%|██▋       | 271/1000 [00:01<00:04, 167.16it/s] 29%|██▉       | 289/1000 [00:01<00:04, 157.88it/s] 31%|███       | 309/1000 [00:01<00:04, 167.72it/s] 33%|███▎      | 330/1000 [00:01<00:03, 178.38it/s] 35%|███▌      | 351/1000 [00:01<00:03, 186.23it/s] 37%|███▋      | 372/1000 [00:02<00:03, 191.87it/s] 39%|███▉      | 393/1000 [00:02<00:03, 195.62it/s] 41%|████▏     | 414/1000 [00:02<00:02, 198.27it/s] 43%|████▎     | 434/1000 [00:02<00:02, 198.73it/s] 46%|████▌     | 455/1000 [00:02<00:02, 201.66it/s] 48%|████▊     | 476/1000 [00:02<00:02, 201.06it/s] 50%|████▉     | 497/1000 [00:02<00:02, 202.59it/s] 52%|█████▏    | 520/1000 [00:02<00:02, 208.18it/s] 54%|█████▍    | 543/1000 [00:02<00:02, 212.78it/s] 57%|█████▋    | 566/1000 [00:03<00:02, 216.03it/s] 59%|█████▉    | 588/1000 [00:03<00:01, 210.41it/s] 61%|██████    | 610/1000 [00:03<00:01, 210.56it/s] 63%|██████▎   | 632/1000 [00:03<00:01, 210.80it/s] 65%|██████▌   | 654/1000 [00:03<00:01, 210.23it/s] 68%|██████▊   | 676/1000 [00:03<00:01, 208.21it/s] 70%|██████▉   | 697/1000 [00:03<00:01, 207.85it/s] 72%|███████▏  | 718/1000 [00:03<00:01, 206.43it/s] 74%|███████▍  | 739/1000 [00:03<00:01, 204.41it/s] 76%|███████▌  | 760/1000 [00:03<00:01, 201.35it/s] 78%|███████▊  | 781/1000 [00:04<00:01, 196.24it/s] 80%|████████  | 803/1000 [00:04<00:00, 201.56it/s] 82%|████████▏ | 824/1000 [00:04<00:00, 203.08it/s] 85%|████████▍ | 846/1000 [00:04<00:00, 205.58it/s] 87%|████████▋ | 868/1000 [00:04<00:00, 207.94it/s] 89%|████████▉ | 889/1000 [00:04<00:00, 208.13it/s] 91%|█████████ | 910/1000 [00:04<00:00, 200.13it/s] 93%|█████████▎| 931/1000 [00:04<00:00, 188.76it/s] 95%|█████████▌| 951/1000 [00:04<00:00, 182.65it/s] 97%|█████████▋| 970/1000 [00:05<00:00, 178.84it/s] 99%|█████████▉| 988/1000 [00:05<00:00, 176.33it/s]100%|██████████| 1000/1000 [00:05<00:00, 190.56it/s]
+  0%|          | 0/50 [00:00<?, ?it/s]  2%|▏         | 1/50 [03:08<2:33:49, 188.35s/it]Process ForkPoolWorker-295:
+Traceback (most recent call last):
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/pool.py", line 131, in worker
+    put((job, i, result))
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/queues.py", line 368, in put
+    self._writer.send_bytes(obj)
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/process.py", line 315, in _bootstrap
+    self.run()
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/pool.py", line 136, in worker
+    put((job, i, (False, wrapped)))
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/queues.py", line 368, in put
+    self._writer.send_bytes(obj)
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/connection.py", line 200, in send_bytes
+    self._send_bytes(m[offset:offset + size])
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/connection.py", line 411, in _send_bytes
+    self._send(header + buf)
+  File "/home/work/anaconda3/envs/dongjae_graph/lib/python3.8/multiprocessing/connection.py", line 368, in _send
+    n = write(self._handle, buf)
+BrokenPipeError: [Errno 32] Broken pipe
